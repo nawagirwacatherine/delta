@@ -2,100 +2,74 @@ import { Link } from 'react-router-dom';
 
 const WelcomeScreen = () => {
   return (
-    // <div className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-4 animate-fadeIn">
-      <div className=" justify-center bg-white shadow-xl rounded-2xl w-full  p-20 md:p-10 transition-all">
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
-          Welcome to HerCompass
-        </h2>
-        <p className="text-center text-gray-600 mb-6 text-base md:text-lg">
-          Your trusted companion for reproductive health education and support.
-        </p>
+    <div className="min-h-screen bg-white py-16 px-6 md:px-20">
+      {/* Main Section: Left Text + Right Image */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mb-16">
+        {/* Left Column: Intro Text */}
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#4ABBB7] mb-6">
+            Welcome to HerCompass
+          </h1>
+          <p className="text-gray-700 text-lg mb-6 max-w-xl">
+            Your trusted companion for reproductive health education and support. Access reliable information, get answers to your questions, and connect with your community — all while maintaining your privacy.
+          </p>
 
-        {/* Language Selector */}
-        <div className="mb-8 text-center">
-          <p className="font-medium mb-2">Select Your Language</p>
-          <div className="flex justify-center flex-wrap gap-2">
-            <button className="bg-black text-white px-4 py-2 rounded hover:scale-105 transition">English</button>
-            <button className="bg-gray-300 px-4 py-2 rounded hover:scale-105 transition">Español</button>
-            <button className="bg-gray-300 px-4 py-2 rounded hover:scale-105 transition">Français</button>
-            <button className="bg-gray-300 px-4 py-2 rounded hover:scale-105 transition">Kiswahili</button>
-          </div>
-        </div>
-
-        {/* Feature Cards */}
-        <div className="grid gap-4 mb-8 sm:grid-cols-1 md:grid-cols-3">
-          <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
-            <h3 className="font-semibold mb-2">Education Hub</h3>
-            <p className="text-sm text-gray-600 mb-3">Comprehensive guides on reproductive health.</p>
-            <Link to="/topic" className="text-sm bg-pink-500 text-white px-3 py-1 rounded hover:bg-pink-600 transition">Explore Now</Link>
-          </div>
-
-          <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition ">
-            <h3 className="font-semibold mb-2">Ask Questions</h3>
-            <p className="text-sm text-gray-600 mb-3">Get answers privately and anonymously.</p>
-            <button className="text-sm bg-green-900 text-white px-3 py-1 rounded hover:bg-pink-600 transition">Start Chat</button>
-          </div>
-
-          <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
-            <h3 className="font-semibold mb-2">Community Stories</h3>
-            <p className="text-sm text-gray-600 mb-3">Read experiences from women in your community.</p>
-            <button className="text-sm bg-green-900 text-white px-3 py-1 rounded hover:bg-pink-600 transition">Read Stories</button>
-          </div>
-
-            <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
-            <h3 className="font-semibold mb-2">Community Stories</h3>
-            <p className="text-sm text-gray-600 mb-3">Read experiences from women in your community.</p>
-            <button className="text-sm  text-white px-3 py-1 rounded hover:bg-pink-600 transition">Read Stories</button>
-
-            {/* style={{ background:'#4ABBB7'}} */}
-          </div>
-
-            <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
-            <h3 className="font-semibold mb-2">Community Stories</h3>
-            <p className="text-sm text-gray-600 mb-3">Read experiences from women in your community.</p>
-            <button className="text-sm bg-green-900 text-white px-3 py-1 rounded hover:bg-pink-600 transition">Read Stories</button>
-          </div>
-
-            <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
-            <h3 className="font-semibold mb-2">Community Stories</h3>
-            <p className="text-sm text-gray-600 mb-3">Read experiences from women in your community.</p>
-            <button className="text-sm bg-green-900 text-white px-3 py-1 rounded hover:bg-pink-600 transition">Read Stories</button>
-          </div>
-        </div>
-
-        {/* Quick Actions */}
-        <div className="grid grid-cols-2 gap-4 mb-8 sm:grid-cols-2 md:grid-cols-2">
-          <button className="bg-gray-100 p-3 rounded shadow hover:shadow-md transition">Cycle Tracker</button>
-          <button className="bg-gray-100 p-3 rounded shadow hover:shadow-md transition">Resources</button>
-          <button className="bg-gray-100 p-3 rounded shadow hover:shadow-md transition">Self Assessment</button>
-          <button className="bg-gray-100 p-3 rounded shadow hover:shadow-md transition">Settings</button>
-        </div>
-
-        {/* Get Started */}
-        <div className="text-center  flex gap-4">
-          <div>
           <Link
             to="/healthy-journey"
-            className="bg-green-900 text-white px-6 py-3 rounded-full hover:bg-green-700 hover:scale-105 transition"
+            className="bg-[#4ABBB7] text-white px-6 py-3 rounded hover:bg-[#3aa5a2] transition inline-block"
           >
             Get Started
           </Link>
+        </div>
 
-          </div>
-
-
-               <div className=''>
-            <Link
-            to="/topic"
-            className="bg-green-900  text-white px-6 py-3 rounded-full hover:bg-green-700 hover:scale-105 transition"
-          >
-            Get Started
-          </Link>
-          </div>
+        {/* Right Column: Image */}
+        <div className="flex justify-center">
+          <img
+            src="https://via.placeholder.com/400x300?text=Medical+Image" // Replace with actual image asset if available
+            alt="Medical tools"
+            className="rounded-lg shadow-md max-w-full h-auto"
+          />
         </div>
       </div>
-  
+
+      {/* Feature Cards Section */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        {/* Education Hub */}
+        <div className="bg-white border border-gray-200 shadow-md rounded-lg p-6 text-center">
+          <h3 className="text-lg font-semibold text-[#4ABBB7] mb-2">Education Hub</h3>
+          <p className="text-gray-600 text-sm mb-4">Explore guides and tools about reproductive health.</p>
+          <Link
+            to="/topic"
+            className="bg-[#4ABBB7] text-white px-4 py-2 rounded hover:bg-[#3aa5a2] transition"
+          >
+            Explore
+          </Link>
+        </div>
+
+        {/* Ask Questions */}
+        <div className="bg-white border border-gray-200 shadow-md rounded-lg p-6 text-center">
+          <h3 className="text-lg font-semibold text-[#4ABBB7] mb-2">Ask Questions</h3>
+          <p className="text-gray-600 text-sm mb-4">Get answers privately and anonymously.</p>
+          <button className="bg-[#4ABBB7] text-white px-4 py-2 rounded hover:bg-[#3aa5a2] transition">
+            Start Chat
+          </button>
+        </div>
+
+        {/* Community Stories */}
+        <div className="bg-white border border-gray-200 shadow-md rounded-lg p-6 text-center">
+          <h3 className="text-lg font-semibold text-[#4ABBB7] mb-2">Community Stories</h3>
+          <p className="text-gray-600 text-sm mb-4">Read experiences from others like you.</p>
+          <button className="bg-[#4ABBB7] text-white px-4 py-2 rounded hover:bg-[#3aa5a2] transition">
+            Read Stories
+          </button>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="text-center text-gray-500 text-sm mt-12">
+        Your Health, Your Future
+      </div>
+    </div>
   );
 };
 

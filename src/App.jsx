@@ -8,16 +8,14 @@ import {BrowserRouter as Router, Route, Routes,Link,useLocation} from 'react-rou
 
 
 
-     const Navbar = () => (     
-  <div className=" m-3 rounded-xl text-black flex items-center justify-center" style={{ color:'#4ABBB7'}}>
-    
-    <Link to="/" className="p-10 ">Welcome!</Link>|
-    <Link to="/healthy-journey" className="p-5 ">Health Journey Menu</Link>|
-    <Link to="/topic" className="p-5">Topic Page</Link>|
-    <Link to="/clinics" className="p-5">Clinic Finder or Help</Link>
+  const Navbar = () => (
+  <div className="bg-white shadow-md px-4 py-3 flex justify-center items-center gap-6 text-sm font-semibold text-[#4ABBB7]">
+    <Link to="/">Welcome</Link>
+    <Link to="/healthy-journey">Health Journey</Link>
+    <Link to="/topic">Topics</Link>
+    <Link to="/clinics">Clinic Finder</Link>
   </div>
-
-  ) ;
+);
 
   const AppRoutes = () => {
   const location = useLocation();
