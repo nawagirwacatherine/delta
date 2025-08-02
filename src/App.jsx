@@ -1,5 +1,5 @@
-
-import User from './pages/User.jsx'
+// style={{ borderRadius:'5px', background:'#4ABBB7', color:'white'}}
+import HealthJourney  from './pages/HealthJourney.jsx'
 import WelcomeScreen from './pages/WelcomeScreen.jsx';
 import TopicPage from './pages/TopicPage.jsx'
 import ClinicFinder from './pages/ClinicFinder.jsx'
@@ -9,7 +9,7 @@ import {BrowserRouter as Router, Route, Routes,Link,useLocation} from 'react-rou
 
 
      const Navbar = () => (     
-  <div className=" m-3 rounded-xl text-black flex items-center justify-center">
+  <div className=" m-3 rounded-xl text-black flex items-center justify-center" style={{ color:'#4ABBB7'}}>
     
     <Link to="/" className="p-10 ">Welcome!</Link>|
     <Link to="/healthy-journey" className="p-5 ">Health Journey Menu</Link>|
@@ -29,7 +29,7 @@ import {BrowserRouter as Router, Route, Routes,Link,useLocation} from 'react-rou
 
       <Routes>
         <Route path="/" element={<WelcomeScreen />} />
-        <Route path="/healthy-journey" element={<User />} />
+        <Route path="/healthy-journey" element={<HealthJourney  />} />
         <Route path="/topic" element={<TopicPage />} />
         <Route path="/clinics" element={<ClinicFinder />} />
       </Routes>
@@ -43,11 +43,12 @@ import {BrowserRouter as Router, Route, Routes,Link,useLocation} from 'react-rou
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen ">
+        {/* style={{background:'#4ABBB7'}} */}
         
-        <div className="text-center text-2xl flex font-bold mt-5 ml-4">< GiSextant className='text-green-900 text-7xl' />HerCompass</div>
+        <div className="text-center text-2xl flex font-bold mt-5 ml-4">< GiSextant className='text-7xl' style={{color:'#4ABBB7'}} />HerCompass</div>
         
-        <Navbar /> {/* ✅ Navbar added here */}
+        <Navbar   /> {/* ✅ Navbar added here */}
 
         <AppRoutes />
       </div>

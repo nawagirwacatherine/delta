@@ -46,7 +46,9 @@ const WelcomeScreen = () => {
             <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">
             <h3 className="font-semibold mb-2">Community Stories</h3>
             <p className="text-sm text-gray-600 mb-3">Read experiences from women in your community.</p>
-            <button className="text-sm  text-white px-3 py-1 rounded hover:bg-pink-600 transition"  style={{ background:'#4ABBB7'}}>Read Stories</button>
+            <button className="text-sm  text-white px-3 py-1 rounded hover:bg-pink-600 transition">Read Stories</button>
+
+            {/* style={{ background:'#4ABBB7'}} */}
           </div>
 
             <div className="border rounded-lg p-4 text-center shadow hover:shadow-lg transition">

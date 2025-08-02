@@ -8,7 +8,7 @@ import Suggestions from '../components/clinicFinder/Suggestions'
 const ClinicFinder = () => {
   return (
     <div>
-        <ClinicFinderNav/>
+        <ClinicFinderNav className="w-20 bg-green-900"/>
 
         <div id='#contacts'>
             <Contacts/>
