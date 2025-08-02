@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import logoscre from "../assets/logoscre.jpeg";
+
 
 const WelcomeScreen = () => {
   return (
@@ -25,7 +27,7 @@ const WelcomeScreen = () => {
         {/* Right Column: Image */}
         <div className="flex justify-center">
           <img
-            src="https://via.placeholder.com/400x300?text=Medical+Image" // Replace with actual image asset if available
+            src={logoscre}// Replace with actual image asset if available
             alt="Medical tools"
             className="rounded-lg shadow-md max-w-full h-auto"
           />
