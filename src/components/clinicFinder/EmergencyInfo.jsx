@@ -3,7 +3,7 @@ import React from 'react'
 
 const EmergencyInfo = () => {
   return (
-    <div>EmergencyInfo</div>
+    <div></div>
   )
 }
 

@@ -10,12 +10,8 @@ const TopicPage = () => {
   return (
     <div>
        <TopicsPageNav/>
-       
-       <div id='weekly'> 
-        <WeeklyTips/>
-        </div>
 
-        <div id='steps'>
+        {/* <div id='steps'>
               <Steps/>
         </div>
          
@@ -23,7 +19,7 @@ const TopicPage = () => {
         <div id='qandanswer'>
             <QandAnswer/>
             </div>
-          
+           */}
            
     </div>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 
 const GpsMap = () => {
   return (
-    <div>GpsMap</div>
+    <div></div>
   )
 }
 
